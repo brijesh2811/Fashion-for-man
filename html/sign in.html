@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion For Man singin</title>
+    <link rel="website icon" type="png" href="/image/web-logo.png">
+    <link rel="stylesheet" href="/CSS/sign in.css">
+</head>
+<body>
+    <header>
+        <nav class="df jsb aic">
+            <div class="logo">
+                <img src="/image/logo.png" alt="logo">
+            </div>
+            <div class="searchbar df aic">
+                <input type="search" placeholder="Seach Fashion's Brands"><img src="/image/search.png" alt="logo">
+            </div>
+            <div class="navbar">
+                <ul class="df jsb aic">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="#">Categories
+                            <ul class="categories">
+                                <li><a href="">Shirt & T-shirt</a></li>
+                                <li><a href="">Pant & Jens</a></li>
+                                <li><a href="">Shoes</a></li>
+                                <li><a href="">Goggles</a></li>
+                                <li><a href="">Belts</a></li>
+                            </ul>
+                        </a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#">Content us</a></li>
+                </ul>
+            </div>
+            <div class="manubar">
+                <img src="/image/manubar.png" alt="manubar">
+            </div>
+        </nav>
+        <section class="sec1">
+            <div class="container">
+                <div class="mainbox">
+                    <div class="login">
+                        <h1>welcome!</h1>
+                        <h4 class="signup"> Don't have an account?<span class="signUp"><a href="/HTML/sign up.html">Sign up.</a></span></h4>
+                        <div class="google-login">
+                            <button class="aic df" id="google-login-btn"><img src="/image/Google.png" alt="">continue with google</button>
+                        </div>
+                        <div class="option-login">
+                            <h5>----------Or Continue with Username/email----------</h5>
+                        </div>
+                        <form >
+                            <table>
+                                <tr class="user-email">
+                                    <td><label for="UserName">Username or Email address</label></td>
+                                    <td><input type="text" placeholder="Enter your user name or Email address" id="UserName"></td>
+                                    <td><span id="user-error"></span></td>
+                                </tr>
+                                <tr class="password">
+                                    <td><label for="Password">Password</label></td>
+                                    <td><input type="password" placeholder="Password" id="Password"></td>
+                                    <td><h6><a href="#">forget password?</a></h6></td>
+                                    <td><span id="password-error"></span></td>
+                                </tr>
+                                <tr class="login-btn">
+                                    <td><button id="login-btn" onclick="loginForm()">Login</button></td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- <script src="/JS/sign in.js"></script> -->
+    <script>
+        function loginForm(){
+    let username=documnet.getElementById("UserName");
+    let user_error=document.getElementById("user-error");
+    let password=document.getElementById("Password");
+    console.log=(username,password)
+    if(username.value=""){
+        user_error.innerHTML="enter the user or email";
+        event.preventDefault();
+    }
+    else{
+        user_error.innerHTML="";
+    }
+}
+    </script>
+</body>
+</html>
