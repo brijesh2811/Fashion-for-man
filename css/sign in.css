@@ -1,0 +1,258 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    background-image: url(https://cdn.mos.cms.futurecdn.net/c5K4UNW9Wd4Dm6GnMKDaGk.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: -10px 0px;
+    
+}
+section{
+    overflow: hidden;
+}
+img{
+    width: 100%;
+}
+.df{
+    display: flex;
+}
+.jsb{
+    justify-content: space-between;
+}
+.aic{
+    align-items: center;
+}
+nav{
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+nav .logo{
+    width: 15vh;
+}
+nav .searchbar input{
+    font-size: 30px;
+    width: 400px;
+    height: 40px;
+    outline:none;
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    border-right: none;
+    padding: 10px;
+}
+nav .searchbar img{
+    background-color: white;
+    width: 38px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    border-left: none;
+}
+nav .navbar li{
+    font-size: 30px;
+    list-style-type: none;
+    margin: 0px 6px;
+}
+nav .navbar .categories{
+    display: none;
+}
+nav .navbar button{
+    font-size: 20px;
+    color: black;
+    background-color:none;
+    border: none;
+    border-radius: 10px;
+    padding:  5px 10px;
+    margin: 0px 5px;
+}
+nav .navbar a{
+    color: black;
+    text-decoration: none ;
+}
+nav .navbar a:hover{
+    color: white;
+}
+nav .manubar{
+    display: none;
+}
+.mainbox{
+    margin: 0px auto;
+    padding: 20px;
+    width: 50%;
+}
+.login{
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: 70%;
+    margin: 10px 24vh;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 30px;
+}
+.login h1{
+    font-size: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    color:black;
+}
+.login h4{
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: center;
+}
+.login a{
+    color: blue;
+}
+.login a:hover{
+    color: blue;
+}
+.login .google-login button{
+    padding: 10px 12vh;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top:25px ;
+    text-align: center;
+}
+.login .google-login img{
+    width: 30px;
+}
+.login .option-login{
+    text-align: center;
+    margin: 15px;
+    font-size: 17px;
+}
+form table .user-email, form table .password{
+    display: grid;
+    grid-column: auto;
+    font-size: 25px;
+    margin-top: 10px;
+}
+form table .user-email input, form table .password input{
+    width: 120%;
+    border: none;
+    border-bottom: 2px solid;
+    border-radius: 10px;
+    font-size: 17px;
+    padding: 5px 10px;
+    background-color:bisque
+}
+form .login-btn button{
+    padding: 5px 60%;
+    margin-top: 20px;
+    font-size: 25px;
+    border: 4px solid #a88787;
+    border-radius: 20px;
+    background-color: #e4dddc;
+    color:#eb9292;
+}
+form .login-btn button:hover{
+    color:#e4dddc;
+}
+button{
+    cursor: pointer;
+}
+span{
+    color: red;
+}
+/*-----------------------Phone View-----------------------*/
+@media screen and (max-width:767px) {
+    .searchbar{
+        display: none;
+    }
+    .navbar{
+        display: none;
+    }
+    nav .manubar{
+        display: block;
+    }
+    .mainbox{
+        margin: 0px auto;
+        padding: 20px;
+        width: 100%;
+    }
+    .login{
+        width: 90%;
+        margin: 10px 5vh;
+    }
+    .login h1{
+        color: white;
+    }
+    .login h4{
+        font-size: 15px;
+        margin-bottom: 40px;
+        color: white;
+    }
+    .login .google-login button{
+        font-size: 20px;
+        padding: 10px 4vh;
+    }
+    .login .option-login{
+        font-size: 12px;
+        margin-bottom: 30px;
+        color: white;
+    }
+    form table .user-email, form table .password{
+        font-size: 17px;
+    }
+    form table .user-email input, form table .password input{
+        font-size: 10px;
+        width: 140%;
+    }
+    form .login-btn button{
+       font-size: 15px;
+       width: 140%;
+    }
+}
+/*-----------------------Tablet view-----------------------*/
+@media (min-width:768px) and (max-width:1024px) {
+    .navbar{
+        display: none;
+    }
+    nav .manubar{
+        display: block;
+    }
+    .mainbox{
+        padding: 20px;
+        width: 100%;
+    }
+    .login{
+        width: 90%;
+        margin: 12vh 5vh;
+    }
+    .login h1{
+        font-size:90px ;
+        margin-top: 45px;
+        color: white;
+    }
+    .login h4{
+        font-size: 20px;
+        margin-bottom: 40px;
+        color: white;
+    }
+    .login .google-login button{
+        font-size: 25px;
+        padding: 10px 20vh;
+    }
+    .login .option-login{
+        font-size: 20px;
+        margin-bottom: 70px;
+        color: white;
+    }
+    form table .user-email, form table .password{
+        font-size: 20px;
+    }
+    form table .user-email input, form table .password input{
+        width:350%;
+    }
+    form .login-btn button{
+       font-size: 30px;
+       width: 350%;
+       margin: 40px 0px 40px 0px;
+    }
+}
